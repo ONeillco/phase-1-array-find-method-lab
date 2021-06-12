@@ -1,10 +1,9 @@
 
+function superbowlWin(array){
+let found = array.find(element => element.result === "W")
 
-function superbowlWin(){
-    const celebrate = record.find(record => record.result === "W")
-    if (celebrate) {
-        return celebrate.year;
-    } else {
-        return undefined;
+if(found){
+return found.year
     }
+
 }
